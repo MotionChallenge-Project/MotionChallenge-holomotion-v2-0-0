@@ -21,3 +21,9 @@ outside Git.
 
 This adapter uses the released WholeBody-14 controller. The root `MotionChallenge-Core`
 submodule owns datasets, physics, metrics and verification. See `--help` for options.
+
+## Observation track
+
+Default: **ideal proprioception, no global position feedback**. [Admission and special handling](admission.json) · [Rules](MotionChallenge-Core/docs/OBSERVATIONS.md).
+
+For the original privileged-state track: `uv run evaluate.py --track privileged`.
