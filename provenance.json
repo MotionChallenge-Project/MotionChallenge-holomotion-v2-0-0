@@ -6,7 +6,7 @@
   "upstream": "https://github.com/HorizonRobotics/HoloMotion",
   "source_commit": "ebb3747ad3b6dab57e4b621611efef87317bdc3b",
   "checkpoint_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
-  "author_inference_review": "Passed native CUDA FK/observation, motion-entry heading, recurrent CPU inference and motor-target comparison: 160 states, 4 resets, 20 endpoint cases and RoPE reset at step 8128.",
+  "author_inference_review": "Numerical comparison against pinned author inference: validation/native-parity.json",
   "inference_validation": "validation/native-parity.json",
   "benchmark_physics": "shared G1 canonical profile, not the author training simulator",
   "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms",

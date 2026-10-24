@@ -33,10 +33,6 @@
   "handling": "Actual control-point offsets are local FK. Reconstruct with current joints/orientation at a fixed zero origin; compare the complete 1378D released WholeBody14 inference path. Reference positions remain relative to the reference root.",
   "actual_position_integration": "No explicit integration or odometry in the inspected deployed adapter source; blocked paths are listed separately.",
   "special_handling": "FK of allowed state at fixed synthetic origin (0,0,0); never actual measured origin.",
-  "new_evaluation": {
-    "status": "queued",
-    "inherited_scores": false
-  },
   "repository": "https://github.com/MotionChallenge-Project/MotionChallenge-holomotion-v2-0-0",
   "dependency_test": {
     "path": "validation/observation-access.json",
