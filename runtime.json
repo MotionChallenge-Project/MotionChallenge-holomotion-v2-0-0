@@ -1,6 +1,6 @@
 {
   "id": "holomotion-v2-0-0-g1-v1",
-  "entrypoint": "adapter:create",
+  "entrypoint": "restricted:create",
   "control_period_s": 0.02,
   "reference_step_s": 0.02,
   "reference_steps": [
@@ -21,7 +21,7 @@
   ],
   "reference_history_s": 0,
   "reference_preview_s": 0.1,
-  "state_access": "privileged-state-v0",
+  "state_access": "ideal-proprioceptive-no-position-v1",
   "action_mode": "joint-pd-feedforward",
   "inference_config": "policy.json",
   "inference_config_sha256": "a2ca89e2a34bb2493cb31ec515893fcdf55f41e14c9eb2a4aab068dc6a038ddd",
@@ -31,12 +31,8 @@
   "source_repository": "https://github.com/HorizonRobotics/HoloMotion",
   "source_commit": "ebb3747ad3b6dab57e4b621611efef87317bdc3b",
   "weights_url": "https://huggingface.co/HorizonRobotics/HoloMotion_models/resolve/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
-  "default_track": "ideal-proprioception",
-  "observation_tracks": {
-    "ideal-proprioception": {
-      "entrypoint": "restricted:create",
-      "admission_record": "admission.json",
-      "admission_sha256": "4e2397847a0978d100f8d1a33b3f39401feac5e9ccf7346c188979b273ff5435"
-    }
+  "observation_contract": {
+    "admission_record": "admission.json",
+    "admission_sha256": "4e2397847a0978d100f8d1a33b3f39401feac5e9ccf7346c188979b273ff5435"
   }
 }
