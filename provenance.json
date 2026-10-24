@@ -1,7 +1,7 @@
 {
   "model": "holomotion-v2-0-0",
   "display_name": "HoloMotion v2.0.0",
-  "submitter": "Motion Challenge",
+  "submitter": "MotionChallenge",
   "submission_type": "maintainer reproduction, not author submission",
   "upstream": "https://github.com/HorizonRobotics/HoloMotion",
   "source_commit": "ebb3747ad3b6dab57e4b621611efef87317bdc3b",
