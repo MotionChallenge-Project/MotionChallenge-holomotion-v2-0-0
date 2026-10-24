@@ -1,0 +1,34 @@
+{
+  "model": "holomotion-v2-0-0",
+  "display_name": "HoloMotion v2.0.0",
+  "submitter": "Motion Challenge",
+  "submission_type": "maintainer reproduction, not author submission",
+  "upstream": "https://github.com/HorizonRobotics/HoloMotion",
+  "source_commit": "ebb3747ad3b6dab57e4b621611efef87317bdc3b",
+  "checkpoint_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+  "author_inference_review": "Passed native CUDA FK/observation, motion-entry heading, recurrent CPU inference and motor-target comparison: 160 states, 4 resets, 20 endpoint cases and RoPE reset at step 8128.",
+  "inference_validation": "validation/native-parity.json",
+  "benchmark_physics": "shared G1 canonical profile, not the author training simulator",
+  "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms",
+  "checkpoint_origin": {
+    "author_release_url": "https://github.com/HorizonRobotics/HoloMotion/tree/ebb3747ad3b6dab57e4b621611efef87317bdc3b",
+    "author_release_label": "HorizonRobotics/HoloMotion v2.0.0",
+    "kind": "author_file",
+    "kind_label": "Author-released checkpoint",
+    "artifact_page_url": "https://huggingface.co/HorizonRobotics/HoloMotion_models/blob/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
+    "original_filename": "HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
+    "verification": "SHA256 pins the author artifact. Native inference parity is recorded separately.",
+    "download_url": "https://huggingface.co/HorizonRobotics/HoloMotion_models/resolve/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
+    "sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86"
+  },
+  "inference_contract": {
+    "mode": "WholeBody-14",
+    "future_frames": 5,
+    "future_step_s": 0.02,
+    "reference_anchor": "current reference pelvis; motion-entry heading alignment; all target transforms in actual pelvis frame",
+    "rotation_6d": "rotated X axis followed by rotated Z axis",
+    "endpoint": "shared core clamps future references at final frame; native VR provider time-valid mask stays one",
+    "cache_reset_step": 8128,
+    "action": "raw ONNX action; float32 default + action scale; no clipping or EMA"
+  }
+}

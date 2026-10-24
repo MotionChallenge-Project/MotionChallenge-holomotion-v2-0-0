@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "cases": 160,
+  "resets": 4,
+  "endpoint_cases": 20,
+  "rope_boundary": 8128,
+  "max_abs_error": {
+    "heading": 9.490868215777937e-07,
+    "measured_fk_position": 4.940366630235005e-07,
+    "measured_fk_rotation": 2.797133446530431e-07,
+    "observation": 9.179115295410156e-06,
+    "network": 0.0,
+    "action": 9.179115295410156e-06,
+    "motor_target": 3.635883331298828e-06,
+    "cache": 1.0251998901367188e-05,
+    "reset_cache": 0.0,
+    "kp": 0.0,
+    "kd": 0.0
+  },
+  "limits": {
+    "heading": 0.0002,
+    "measured_fk_position": 0.0002,
+    "measured_fk_rotation": 0.0002,
+    "observation": 0.0002,
+    "network": 0.0,
+    "action": 0.002,
+    "motor_target": 0.002,
+    "cache": 0.002,
+    "reset_cache": 0.0,
+    "kp": 0.0,
+    "kd": 0.0
+  },
+  "checkpoint_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+  "source_commit": "ebb3747ad3b6dab57e4b621611efef87317bdc3b",
+  "version": "v2.0.0",
+  "scope": "Original CUDA Warp reference/measured FK and 1378-D observation; original motion-entry heading and CPU ONNX recurrent runtime; motor targets, joint permutations, endpoint clamping and cache reset. Canonical physics unchanged; GPU ONNX equivalence is separate."
+}
