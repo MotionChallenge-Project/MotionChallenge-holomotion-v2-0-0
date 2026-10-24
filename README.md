@@ -1,6 +1,6 @@
 # HoloMotion v2.0.0
 
-[Author project](https://horizonrobotics.github.io/holomotion/) · [Checkpoint](https://huggingface.co/HorizonRobotics/HoloMotion_models/blob/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx) · [Provenance](provenance.json)
+[Author project](https://horizonrobotics.github.io/robot_lab/holomotion/) · [Checkpoint](https://huggingface.co/HorizonRobotics/HoloMotion_models/blob/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx) · [Provenance](provenance.json)
 
 ## Install and run
 
