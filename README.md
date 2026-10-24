@@ -19,5 +19,5 @@ Missing data and weights are downloaded and hash-checked. Cached files can be
 selected with `--weights PATH --data PATH --offline`. Results and traces stay
 outside Git.
 
-This adapter uses the released WholeBody-14 controller. The root `motion-challenge`
+This adapter uses the released WholeBody-14 controller. The root `MotionChallenge-Core`
 submodule owns datasets, physics, metrics and verification. See `--help` for options.

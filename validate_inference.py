@@ -91,7 +91,7 @@ def main():
         onnx_index_for_config_joint=[policy.names.index(n) for n in config['robot']['dof_names']],
         default_joint_pos_onnx=policy.default.astype(np.float32))
     builder = Builder(contract, asset, device=args.device)
-    world = World(root/'motion-challenge/robots/g1-29dof-cpu-v0.json')
+    world = World(root/'MotionChallenge-Core/robots/g1-29dof-cpu-v0.json')
     rng = np.random.default_rng(241025)
     shuffle = rng.permutation(29)
     names = tuple(np.asarray(world.joint_names)[shuffle])
