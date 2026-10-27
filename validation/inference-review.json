@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "cases": 160,
+  "resets": 4,
+  "endpoint_cases": 20,
+  "rope_boundary": 8128,
+  "max_abs_error": {
+    "heading": 9.490868215777937e-07,
+    "measured_fk_position": 4.940366630235005e-07,
+    "measured_fk_rotation": 2.797133446530431e-07,
+    "observation": 9.179115295410156e-06,
+    "network": 0.0,
+    "action": 9.179115295410156e-06,
+    "motor_target": 3.635883331298828e-06,
+    "cache": 1.0251998901367188e-05,
+    "reset_cache": 0.0,
+    "kp": 0.0,
+    "kd": 0.0
+  },
+  "limits": {
+    "heading": 0.0002,
+    "measured_fk_position": 0.0002,
+    "measured_fk_rotation": 0.0002,
+    "observation": 0.0002,
+    "network": 0.0,
+    "action": 0.002,
+    "motor_target": 0.002,
+    "cache": 0.002,
+    "reset_cache": 0.0,
+    "kp": 0.0,
+    "kd": 0.0
+  },
+  "checkpoint_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+  "source_commit": "ebb3747ad3b6dab57e4b621611efef87317bdc3b",
+  "version": "v2.0.0",
+  "scope": "Original CUDA Warp reference/measured FK and 1378-D observation; original motion-entry heading and CPU ONNX recurrent runtime; motor targets, joint permutations, endpoint clamping and cache reset. Canonical physics unchanged; GPU ONNX equivalence is separate.",
+  "review": {
+    "schema": "MotionChallenge/inference-review-v1",
+    "reviewed_at": "2026-10-27T07:41:40.030291+00:00",
+    "core_commit": "4bf520618f25f72d371117326edb01f4645eaa3f",
+    "base_adapter_commit": "611ab99658ba9aba9e0fea62754c8cab40722ac6",
+    "control_hz": 50.0,
+    "reference_offsets_s": [
+      0.0,
+      0.02,
+      0.04,
+      0.06,
+      0.08,
+      0.1
+    ],
+    "checkpoint_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+    "auxiliary_sha256": {},
+    "deployment_route": "Pinned author deployment/tracking inference, with the shared benchmark observation boundary and physics.",
+    "production_files_sha256": {
+      "adapter.py": "03d53d0fcb3d0c6d27a7796b973c80d917c8318ee50fa38efcdc7891ee27fb06",
+      "evaluate.py": "0ebb8c761f00dd963f2e45c85ecb94628273911bb1edfc0f2621e8fc458cb4ff",
+      "parallel.py": "24f5d3b68572d209c8570f8e346ad63b158aac17a86950aebf49c397d2d234fc",
+      "restricted.py": "8f8fdcc4dc41813cf5d8f8c55e4b219310145f74a540457b52c41843a49bd831"
+    },
+    "inference_config_sha256": "a2ca89e2a34bb2493cb31ec515893fcdf55f41e14c9eb2a4aab068dc6a038ddd",
+    "comparison_script_sha256": "6dea5a5d900423c8255f047437754956949d95d3343924d827c5f5ee125a00f9",
+    "default_batch": {
+      "status": "passed",
+      "cases": 103,
+      "reset_slots": 20,
+      "max_command_abs_error": 0.0,
+      "exact": true,
+      "tolerance": 1e-05,
+      "wall_s": 1.0660168789327145,
+      "checks": [
+        "default PolicyBatch array transport",
+        "1/3/8 active slots",
+        "reordered slots",
+        "independent partial resets and seeded RNG",
+        "reference endpoint clamping",
+        "all five motor command fields"
+      ],
+      "checkpoint_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86"
+    },
+    "restricted_access": {
+      "status": "passed",
+      "cases": 160,
+      "resets": 4,
+      "tolerance_abs": 2e-05,
+      "checkpoint_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+      "network_calls": 160,
+      "max_abs_error": {
+        "observation": 0.0,
+        "network_output": 0.0,
+        "motor_command": 0.0
+      },
+      "checks": [
+        "160 matched state sequences / 4 resets",
+        "large actual translation perturbations",
+        "reference windows preserved including endpoints",
+        "all captured ONNX inputs and outputs",
+        "all PD command fields",
+        "forbidden-field counterfactual before transport"
+      ],
+      "limits": "Finite numerical regression plus source audit; not a proof against malicious code or implicit neural odometry."
+    },
+    "default_batch_script_url": "https://github.com/MotionChallenge-Project/motionchallenge/blob/2ef7ecab3b3a06bb4a53fa137de2d7f9365d6b50/tools/check_adapter_inference.py",
+    "default_batch_script_sha256": "2cb7984c27f4bbca2355ed2e05b5a48ca2e5ceb865850e1b6f2445f06b594241",
+    "scope": "Matched-input inference, observation boundary, deployment configuration and default batch path. No benchmark rollouts or scores were changed.",
+    "deployment_clock_config_sha256": "d95e9fa339fe50c85861633cc8d783749d2a2536d2472d98b09c112029122c1c"
+  }
+}
