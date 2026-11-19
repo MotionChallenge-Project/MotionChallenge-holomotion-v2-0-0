@@ -27,6 +27,8 @@ The policy receives joint positions and velocities, root orientation, angular ve
 
 Control and scoring run every 20 ms, with four 5 ms physics steps. Contact sliding friction is 1.0 and the Newton solver uses at most 50 iterations. Core precomputes reference FK for scoring and reads actual body poses from the simulator. Each full motion reports success, completion, joint error and body-position error with world, XY and XY+yaw alignment, for both full-motion and first-failure-prefix scopes.
 
+BONES-SEED evaluation uses a feasibility-filtered subset of the original G1 motion data. Download the original archive; Core applies one public inclusion list of 129,561 motions shared by every model.
+
 ## Validation files
 
 [Current validation results](validation/README.md) list inference evidence, full dataset scores and clean-run comparisons.
@@ -38,3 +40,9 @@ Control and scoring run every 20 ms, with four 5 ms physics steps. Contact slidi
 - [4096-world check](validation/full-batch-4096.json) records full-batch inference time and GPU tensor memory.
 
 `result.json` and pose traces are saved to the selected output directory. Independent trace verification checks metrics against the recorded trajectories. A separate clean-cache run and comparison establish reproduction; its dataset-specific report is kept separately from inference admission.
+
+<!-- current-evaluation-evidence -->
+
+## Current evaluation evidence
+
+[LAFAN1 full evaluation](validation/lafan-evaluation.json) · [BONES-SEED full evaluation](validation/seed-evaluation.json)
