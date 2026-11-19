@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "entrypoint": "motion_challenge.runtime.mjwarp_entrypoint.converted_weights",
+  "fresh_cache": true,
+  "repository_unchanged_during_conversion": true,
+  "converted_receipt_sha256": "d8f87fccf64f382af81a2d17768afcfeef39f997618d4d0234bb9fe3bf197f9f"
+}

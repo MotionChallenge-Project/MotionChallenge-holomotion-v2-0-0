@@ -1,0 +1,16 @@
+{
+  "model": "holomotion-v2-0-0",
+  "status": "passed",
+  "errors": [],
+  "core_commit": "2221fab60a90adc3c85b1dfd438e00244fb58263",
+  "runtime_sha256": "c95259866b188b05a022bc25501a0916619f8e95348242c76739445464a89583",
+  "locked_environment_and_cli": true,
+  "own_core_import": "/mnt/volumes/nexus-train-bd-ga/swd/motionchallenge-mjwarp/MotionChallenge-holomotion-v2-0-0/MotionChallenge-Core/src/motion_challenge/__init__.py",
+  "admission_and_source_hashes": true,
+  "modules": [
+    "convert_weights",
+    "evaluate",
+    "holo_torch",
+    "tensor_adapter"
+  ]
+}

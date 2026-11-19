@@ -1,0 +1,31 @@
+{
+  "status": "author_release_verified",
+  "model": "holomotion-v2-0-0",
+  "sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+  "author_release_url": "https://raw.githubusercontent.com/HorizonRobotics/HoloMotion/fcb8d4d8e96af9535c2adcc2b53e267019f865a2/README.md",
+  "artifact_url": "https://huggingface.co/HorizonRobotics/HoloMotion_models/resolve/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
+  "verification_scope": "Author repository identifies the published model location; fixed-revision publisher file metadata matches the complete local original file digest. Batch tensors are extracted locally and checked against original ONNX inference.",
+  "runtime_weights_are_original_author_artifact": true,
+  "official_author_weights": true,
+  "author_release_document_sha256": "08e08e99b067b3c690402dffdf03310c005e40af24d2da35563d77328f9a603e",
+  "original_files": [
+    {
+      "component": "policy",
+      "artifact_url": "https://huggingface.co/HorizonRobotics/HoloMotion_models/resolve/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
+      "artifact_path": "HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
+      "sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+      "bytes": 1647887681,
+      "local_complete_file_sha256_verified": true,
+      "huggingface_lfs_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+      "metadata_url": "https://huggingface.co/api/models/HorizonRobotics/HoloMotion_models/tree/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported?expand=true&limit=100",
+      "git_blob_sha1": "e84341ce508e10970688cbbf18cb5a32f135a66a"
+    }
+  ],
+  "conversion_chain": {
+    "original_format": "author-published ONNX",
+    "original_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+    "hook": "convert_weights:prepare",
+    "local_batch_format": "safetensors with model-local tensor implementation",
+    "numerical_evidence": "validation/inference-network-proof.json"
+  }
+}

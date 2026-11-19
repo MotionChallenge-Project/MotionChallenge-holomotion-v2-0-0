@@ -1,0 +1,51 @@
+{
+  "model": "holomotion-v2-0-0",
+  "scope": "Current evidence index; separate from inference admission",
+  "reports": {
+    "inference-network-proof.json": {
+      "status": "passed",
+      "sha256": "19394b983210bc20e2a4856712d28999f668021e886bf3958dc8689cfeded0b6",
+      "scope": "Original ONNX versus CPU and GPU tensor inference"
+    },
+    "tensor-observation-parity.json": {
+      "status": "passed",
+      "sha256": "19ff2dcebefd8fc5d8be85b90cf453b0946f828741ef4dbb30c52d51fc971b13",
+      "scope": "Original observations, history or recurrent state, motion resets and joint targets"
+    },
+    "full-batch-4096.json": {
+      "status": "passed",
+      "sha256": "dbbc6d276bef4c2bc32f8cea68355774a81cc8f750170d53359f67847c99e30c",
+      "scope": "4096 worlds in one forward call"
+    },
+    "conversion-cache-check.json": {
+      "status": "passed",
+      "sha256": "accd3cfe63ae69a70f5e9c2cb1ffbc2e47b02789fb8157ec11a94645fc743e06",
+      "scope": "Unified converter entrypoint; repository files unchanged"
+    },
+    "onnxruntime-crosscheck.json": {
+      "status": "passed",
+      "sha256": "6d36f878b200ffaf2c283f23d4be8baa33e2968a5d5543253a4a6f507e5e50f4",
+      "scope": "Original ONNX Runtime 1.30.0 CPU outputs versus converted GPU outputs"
+    },
+    "delivery-check.json": {
+      "status": "passed",
+      "sha256": "4bf11cb47528068938c0c3693a489d4bfdbbc7056f3e58e496c40481a981b737",
+      "scope": "Model-local production modules, pinned Core dependency, locked environment and current commands"
+    },
+    "checkpoint-origin.json": {
+      "status": "author_release_verified",
+      "sha256": "02668dbf2661a17726164d20aaaeaac3e132f1c954ff67199d6d7866d3a21d58",
+      "scope": "Publisher release identity, original-file hashes and official-entry eligibility"
+    },
+    "lafan-evaluation.json": {
+      "status": "full_rollout_and_independent_trace_verified",
+      "sha256": "3f1ebd832d3e67deb841877d4df4fd9171e6e602412e69cbcf859998a16d6be3",
+      "result_sha256": "13da6cd76c720ad09600bf710d612179862aacb2930300dd48cd965103273713"
+    },
+    "seed-evaluation.json": {
+      "status": "full_rollout_and_independent_trace_verified",
+      "sha256": "fb43abbafee91c5b569c243970d1b0ab1d79a4a85116e9412960dec5ae9141b5",
+      "result_sha256": "405ba91e2ad4571de871f5a920656d8c6b1384658465641de39b51f820b37cb5"
+    }
+  }
+}

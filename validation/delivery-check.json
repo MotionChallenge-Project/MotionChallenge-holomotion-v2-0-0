@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "model": "holomotion-v2-0-0",
+  "runtime_sha256": "c95259866b188b05a022bc25501a0916619f8e95348242c76739445464a89583",
+  "admission_sha256": "bb1a4e45462bc3dfc0a224f0a87ff2b562bb5be52b92e3c47b5ea0297bc6abe5",
+  "production_modules": [
+    "convert_weights",
+    "evaluate",
+    "holo_torch",
+    "tensor_adapter"
+  ],
+  "inference_evidence_hashes_verified": true,
+  "no_actual_global_position_or_linear_velocity": true,
+  "model_local_converter_and_tensor_adapter": true,
+  "no_private_server_paths_or_seed_mjlab_imports_in_production_modules": true,
+  "initialized_core_submodule": true,
+  "independent_locked_environment_and_cli_verified": true,
+  "current_dataset_commands_documented": true,
+  "scope": "Independent source, dependency and documentation delivery; dataset outcomes are reported separately."
+}

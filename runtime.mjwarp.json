@@ -1,0 +1,42 @@
+{
+  "id": "holomotion-v2-0-0-g1-v1",
+  "entrypoint": "restricted:create",
+  "control_period_s": 0.02,
+  "reference_step_s": 0.02,
+  "reference_steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "reference_offsets_s": [
+    0.0,
+    0.02,
+    0.04,
+    0.06,
+    0.08,
+    0.1
+  ],
+  "reference_history_s": 0,
+  "reference_preview_s": 0.1,
+  "state_access": "proprioceptive-no-position-no-linear-velocity-v1",
+  "action_mode": "joint-pd-feedforward",
+  "inference_config": "policy.json",
+  "inference_config_sha256": "a2ca89e2a34bb2493cb31ec515893fcdf55f41e14c9eb2a4aab068dc6a038ddd",
+  "weights": "checkpoints/policy.onnx",
+  "weights_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+  "official": false,
+  "source_repository": "https://github.com/HorizonRobotics/HoloMotion",
+  "source_commit": "ebb3747ad3b6dab57e4b621611efef87317bdc3b",
+  "weights_url": "https://huggingface.co/HorizonRobotics/HoloMotion_models/resolve/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
+  "observation_contract": {
+    "admission_record": "admission.mjwarp.json",
+    "admission_sha256": "bb1a4e45462bc3dfc0a224f0a87ff2b562bb5be52b92e3c47b5ea0297bc6abe5"
+  },
+  "migration_status": "inference_verified",
+  "reference_kinematics_xml_sha256": "3d26c34c75102320e2f58325ffe5cdf1f242ebc9e3b9390c2770f2c532f3ef07",
+  "tensor_entrypoint": "tensor_adapter:TensorHoloMotion",
+  "tensor_conversion": "convert_weights:prepare"
+}

@@ -6,20 +6,21 @@
   "upstream": "https://github.com/HorizonRobotics/HoloMotion",
   "source_commit": "ebb3747ad3b6dab57e4b621611efef87317bdc3b",
   "checkpoint_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
-  "author_inference_review": "Numerical comparison against pinned author inference: validation/native-parity.json",
-  "inference_validation": "validation/native-parity.json",
-  "benchmark_physics": "Shared canonical G1 nominal physics and initialization.",
+  "author_inference_review": "Original ONNX CPU/GPU tensor parity and deployment observation/history/reset checks are recorded in validation/.",
+  "inference_validation": "validation/inference-network-proof.json",
+  "benchmark_physics": "MJWarp 3.11; 20 ms control/scoring, four 5 ms physics steps, sliding friction 1.0, Newton maximum 50 iterations.",
   "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms",
   "checkpoint_origin": {
-    "author_release_url": "https://github.com/HorizonRobotics/HoloMotion/tree/ebb3747ad3b6dab57e4b621611efef87317bdc3b",
+    "author_release_url": "https://raw.githubusercontent.com/HorizonRobotics/HoloMotion/fcb8d4d8e96af9535c2adcc2b53e267019f865a2/README.md",
     "author_release_label": "HorizonRobotics/HoloMotion v2.0.0",
     "kind": "author_file",
-    "kind_label": "Author-released checkpoint",
+    "kind_label": "Author-published original ONNX",
     "artifact_page_url": "https://huggingface.co/HorizonRobotics/HoloMotion_models/blob/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
     "original_filename": "HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
-    "verification": "SHA256 pins the author artifact. Native inference parity is recorded separately.",
+    "verification": "Complete original files match fixed publisher LFS SHA-256 or Git blob identities; validation/checkpoint-origin.json records every component.",
     "download_url": "https://huggingface.co/HorizonRobotics/HoloMotion_models/resolve/e3c90dd1f7483d02d3b4d2e5fb3a359c6ff9c67a/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
-    "sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86"
+    "sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+    "evidence": "validation/checkpoint-origin.json"
   },
   "inference_contract": {
     "mode": "WholeBody-14",
@@ -30,5 +31,6 @@
     "endpoint": "shared core clamps future references at final frame; native VR provider time-valid mask stays one",
     "cache_reset_step": 8128,
     "action": "raw ONNX action; float32 default + action scale; no clipping or EMA"
-  }
+  },
+  "official_author_weights": true
 }

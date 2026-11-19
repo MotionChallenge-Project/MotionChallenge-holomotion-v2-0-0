@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "steps": 16,
+  "batch": 7,
+  "partial_reset_step": 11,
+  "partial_reset_slots": [
+    1,
+    4
+  ],
+  "rope_boundary_steps": [
+    8127,
+    8128
+  ],
+  "observation_max_abs_error": 5.178153514862061e-07,
+  "network_max_abs_error": 5.245208740234375e-06,
+  "memory_max_abs_error": 2.205371856689453e-06,
+  "joint_target_max_abs_error_rad": 2.30264669198732e-06,
+  "history_action_inputs": "identical source-network outputs and caches"
+}

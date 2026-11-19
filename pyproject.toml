@@ -1,8 +1,11 @@
 [project]
 name = "MotionChallenge-holomotion-v2-0-0"
-version = "0.1.0"
+version = "0.2.0"
 requires-python = ">=3.12,<3.13"
 dependencies = ["MotionChallenge-Core"]
+
+[tool.uv]
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
 
 [tool.uv.sources]
 motionchallenge-core = {path = "MotionChallenge-Core", editable = true}

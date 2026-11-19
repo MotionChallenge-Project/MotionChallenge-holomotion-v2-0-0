@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "source_sha256": "b0681976135eed572d1d20aefc52ec65c149bdc636f2594a6436fa7136a3fc86",
+  "reference": "original ONNX ReferenceEvaluator per sample; independent per-world cache and step",
+  "cases": [
+    {
+      "batch": 1,
+      "device": "cpu",
+      "steps": [
+        0
+      ],
+      "max_abs_error": {
+        "actions": 3.8743019104003906e-07,
+        "memory": 1.5497207641601562e-06,
+        "logits": 8.731149137020111e-11
+      },
+      "expert_indices": "exact"
+    },
+    {
+      "batch": 1,
+      "device": "cuda:2",
+      "steps": [
+        0
+      ],
+      "max_abs_error": {
+        "actions": 4.023313522338867e-07,
+        "memory": 9.5367431640625e-07,
+        "logits": 5.820766091346741e-11
+      },
+      "expert_indices": "exact"
+    },
+    {
+      "batch": 7,
+      "device": "cpu",
+      "steps": [
+        0,
+        1,
+        2,
+        31,
+        32,
+        255,
+        8127
+      ],
+      "max_abs_error": {
+        "actions": 5.066394805908203e-07,
+        "memory": 1.6689300537109375e-06,
+        "logits": 1.382431946694851e-10
+      },
+      "expert_indices": "exact"
+    },
+    {
+      "batch": 7,
+      "device": "cuda:2",
+      "steps": [
+        0,
+        1,
+        2,
+        31,
+        32,
+        255,
+        8127
+      ],
+      "max_abs_error": {
+        "actions": 8.344650268554688e-07,
+        "memory": 9.5367431640625e-07,
+        "logits": 8.003553375601768e-11
+      },
+      "expert_indices": "exact"
+    },
+    {
+      "batch": 40,
+      "device": "cpu",
+      "steps": [
+        0,
+        1,
+        2,
+        31,
+        32,
+        255,
+        8127
+      ],
+      "max_abs_error": {
+        "actions": 1.1920928955078125e-06,
+        "memory": 1.9073486328125e-06,
+        "logits": 1.5279510989785194e-10
+      },
+      "expert_indices": "exact"
+    },
+    {
+      "batch": 40,
+      "device": "cuda:2",
+      "steps": [
+        0,
+        1,
+        2,
+        31,
+        32,
+        255,
+        8127
+      ],
+      "max_abs_error": {
+        "actions": 5.960464477539062e-07,
+        "memory": 1.1920928955078125e-06,
+        "logits": 1.0186340659856796e-10
+      },
+      "expert_indices": "exact"
+    },
+    {
+      "batch": 129,
+      "device": "cpu",
+      "steps": [
+        0,
+        1,
+        2,
+        31,
+        32,
+        255,
+        8127
+      ],
+      "max_abs_error": {
+        "actions": 1.0728836059570312e-06,
+        "memory": 2.6226043701171875e-06,
+        "logits": 1.7462298274040222e-10
+      },
+      "expert_indices": "exact"
+    },
+    {
+      "batch": 129,
+      "device": "cuda:2",
+      "steps": [
+        0,
+        1,
+        2,
+        31,
+        32,
+        255,
+        8127
+      ],
+      "max_abs_error": {
+        "actions": 9.5367431640625e-07,
+        "memory": 1.430511474609375e-06,
+        "logits": 1.1641532182693481e-10
+      },
+      "expert_indices": "exact"
+    }
+  ],
+  "max_abs_error": {
+    "actions": 1.1920928955078125e-06,
+    "memory": 2.6226043701171875e-06,
+    "logits": 1.7462298274040222e-10
+  },
+  "oracle_GatherElements": "numpy.take_along_axis",
+  "tolerance": {
+    "absolute": 5e-05,
+    "relative": 2e-05,
+    "expert_indices": "exact"
+  },
+  "converter_sha256": "85ccc14b09b44efee533f5c810b3094a7a49f6d902fc6a1188dd0afa94b743e0",
+  "hook_sha256": "e70ec9e86ede6b375e49092452a7fbd1e223c445bc342db3a733b7ff36def390",
+  "graph_sha256": "473c85b0d51f4d81fee9dcf74d100481fe2610e152351328932b367431f1a493"
+}
